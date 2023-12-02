@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reponsive.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="swiper.css" />
+
+</head>
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-nav">
+            <div class=" row">
+                <div class="col-md-7 col-10">
+                    <div class=" row">
+                        <div class="  col-md-3 col-12">
+                            <div class="header-logo">
+
+                                <img src="./img/logo (1)_thumb_350.png" alt="">
+                            </div>
+                        </div>
+                        <div class="header-input col-md-8 d-md-flex d-none">
+                            <input class="header-input-sub" type="text" placeholder="Từ khoá tìm kiếm">
+                            <i class=" header-input-search fa-solid fa-magnifying-glass fa-rotate-90"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-none  d-flex align-items-center  col-2">
+                    <button class="show_menu" type="button" id="headerMobileBtnMenu">
+                        <nav class="position-relative w-100 h-100">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </nav>
+                    </button>
+                </div>
+                <div class="col-md-5 col-12">
+                    <div class="header-hotline">
+                        HOTLINE
+                        <a href="">090 322 1971 - 098 393 4190</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-navbar d-md-block d-none">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-navbar-sub">
+                        <ul class="header-list">
+                            <li><a href="/index.html">TRANG CHỦ</a></li>
+                            <li><a href="/about.html">GIỚI THIỆU</a></li>
+                            <li class="header-item-a">
+                                <a href="list_projects.html">DỰ ÁN <i class="fa-solid fa-angle-down"
+                                        style=" font-size: 13px;"></i></a>
+                                <div class="header-item-project">
+                                    <ul>
+                                        <li><a href="">Nội thất cổ điển</a></li>
+                                        <li><a href="">Nội thất hiện đại</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-item-b"><a href="/new.html">TIN TỨC
+                                    <i class="fa-solid fa-angle-down" style=" font-size: 13px;"></i>
+                                </a>
+                                <div class="header-item-project">
+                                    <ul>
+                                        <li><a href="">Nội thất cổ điển</a></li>
+                                        <li><a href="">Nội thất hiện đại</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="/contact.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile-menu d-md-none d-block">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        dự án
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">nội thất tân cổ điển</a></li>
+                        <li><a class="dropdown-item" href="#">nội thất hiện đại</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        tin tức
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">nhà đẹp</a></li>
+                        <li><a class="dropdown-item" href="#">kiến thức nội thức</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-12">
+            <div class="bredcrumb">
+                <ul class="bredcrumb-list">
+                    <li class="bredcrumb-item">
+                        <a class="bredcrumb-item-link" href="/index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a id="active" href="">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="andress">
+                <h3>
+                    <i style="font-size: 20px;" class="fa-solid fa-location-dot"></i>
+                    Văn phòng Hà Nội
+                </h3>
+                <div class="address-sub">
+                    <p>Số 27 Ngõ 629 Kim Mã, Ngọc Khánh, Ba Đình, Hà Nội</p>
+                    <p>090 322 1971 - 098 393 4190</p>
+                    <p>giakhanhdecor@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="andress">
+                <h3>
+                    <i style="font-size: 20px;" class="fa-solid fa-location-dot"></i>
+                    Xưởng sản xuất
+                </h3>
+                <div class="address-sub">
+                    <p>Phú Cát, Quốc Oai, Hà Nội</p>
+                    <p>090 322 1971 - 098 393 4190</p>
+                    <p>giakhanhdecor@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="row">
+            <div class="col-md-12 intro-title">
+                <h1 style="text-align: center; font-size: 27px; font-weight: 550;"> LIÊN HỆ
+                    <div class="intro-title-icon"><img width="165px" height="15px" src="/img/heading-bg.png" alt="">
+                    </div>
+                </h1>
+            </div>
+        </div>
+        <div class="contact">
+            <p style="   font-weight: bold;
+                    font-size: 15px; margin-left: 10px;">Các trường bắt buộc không được để trống</p>
+            <form action="">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <label style="   font-weight: bold;
+                        font-size: 15px;" for="">Họ và tên <strong style="color: red;">*</strong></label> <br>
+                        <input type="text">
+            </form>
+            <form action="">
+                <label style="   font-weight: bold;
+                        font-size: 15px;" for="">Tiêu đề <strong style="color: red;">*</strong></label> <br>
+                <input type="text">
+            </form>
+
+        </div>
+        <div class="contact-hideform col-md-6 col-12">
+            <form action="">
+                <label style="   font-weight: bold;
+                        font-size: 15px;" for="">Họ và tên <strong style="color: red;">*</strong></label> <br>
+                <input type="text">
+            </form>
+            <form action="">
+                <label style="   font-weight: bold;
+                        font-size: 15px;" for="">Tiêu đề <strong style="color: red;">*</strong></label> <br>
+                <input type="text">
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form action="">
+                <label style="   font-weight: bold;
+                        font-size: 15px;" for="">Nội dung </label> <br>
+                <input id="contact-content" type="text">
+            </form>
+            <button>GỬI YÊU CẦU</button>
+        </div>
+    </div>
+    </div>
+   
+</div>
+<div class="contact-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.5943897295006!2d108.18362967427083!3d16.034616584639846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142190b8b0c06f1%3A0x163712618b3ae695!2sHongkong!5e0!3m2!1svi!2s!4v1701183649539!5m2!1svi!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+    <div class="footer">
+        <div class="row footer-banner">
+            <div class="footer-banner-sub">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-content">
+                            <img src="/img/logo (1)_thumb_350.png" alt="">
+                            <p><i class="fa-solid fa-building" style="padding-right: 5px;"></i> Văn phòng Hà Nội: Số
+                                27
+                                Ngõ 629 Kim Mã, Ngọc Khánh, Ba
+                                Đình, Hà Nội</p>
+                            <p><i class="fa-solid fa-building " style="padding-right: 5px;"></i> Xưởng sản xuất: Phú
+                                Cát, Quốc Oai - Hà Nội</p>
+                            <p><i class="fa-solid fa-headphones" style="padding-right: 5px;"></i> Hotline: 090 322
+                                1971
+                                - 098 393 4190</p>
+                            <p><i class="fa-solid fa-envelope" style="padding-right: 5px;"></i> Email:
+                                giakhanhdecor@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-content">
+                            <h5 style="font-weight: bold; padding-bottom: 15px;">Về Chúng Tôi</h5>
+                            <p> Giới thiệu</p>
+                            <p> Liên hệ</p>
+                            <p> Dự án nổi bật</p>
+                            <p> Email:
+                                Quy trình tư vấn thiết kế</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-content">
+                            <h5 style="font-weight: bold; padding-bottom: 15px;">Dịch Vụ</h5>
+                            <p> Giới thiệu</p>
+                            <p> Liên hệ</p>
+                            <p> Dự án nổi bật</p>
+                            <p> Email:
+                                Quy trình tư vấn thiết kế</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-content">
+                            <h5 style="font-weight: bold; padding-bottom: 15px;">Theo Dõi Chúng Tôi Tại:</h5>
+                            <p> <i class="fa-brands fa-facebook-f" style="padding:0 3px"></i> <i
+                                    class="fa-brands fa-twitter" style="padding:0 3px"></i> <i
+                                    class="fa-brands fa-google-plus-g" style="padding:0 3px"></i> <i
+                                    class="fa-brands fa-youtube" style="padding:0 3px"></i> <i
+                                    class="fa-brands fa-instagram" style="padding:0 3px"></i></p>
+                            <h5 style="font-weight: bold; padding: 20px 0;">Giờ Mở Cửa</h5>
+                            <p> Thứ 2 – Thứ 6: <br>
+                                8:00 – 20:00 <br>
+
+                                Thứ 7 – CN: <br>
+                                8:00 – 11:30</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>Copyright © 2021 Noithatgiakhanh.vn. All rights reserved.</p>
+                    <!-- <img src="/img/payment_logo.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+</html>

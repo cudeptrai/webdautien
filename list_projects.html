@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reponsive.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="swiper.css" />
+
+</head>
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-nav">
+            <div class=" row">
+                <div class="col-md-7 col-10">
+                    <div class=" row">
+                        <div class="  col-md-3 col-12">
+                            <div class="header-logo">
+
+                                <img src="./img/logo (1)_thumb_350.png" alt="">
+                            </div>
+                        </div>
+                        <div class="header-input col-md-8 d-md-flex d-none">
+                            <input class="header-input-sub" type="text" placeholder="Từ khoá tìm kiếm">
+                            <i class=" header-input-search fa-solid fa-magnifying-glass fa-rotate-90"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-none  d-flex align-items-center  col-2">
+                    <button class="show_menu" type="button" id="headerMobileBtnMenu">
+                        <nav class="position-relative w-100 h-100">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </nav>
+                    </button>
+                </div>
+                <div class="col-md-5 col-12">
+                    <div class="header-hotline">
+                        HOTLINE
+                        <a href="">090 322 1971 - 098 393 4190</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-navbar d-md-block d-none">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-navbar-sub">
+                        <ul class="header-list">
+                            <li><a href="/index.html">TRANG CHỦ</a></li>
+                            <li><a href="/about.html">GIỚI THIỆU</a></li>
+                            <li class="header-item-a">
+                                <a href="list_projects.html">DỰ ÁN <i class="fa-solid fa-angle-down"
+                                        style=" font-size: 13px;"></i></a>
+                                <div class="header-item-project">
+                                    <ul>
+                                        <li><a href="">Nội thất cổ điển</a></li>
+                                        <li><a href="">Nội thất hiện đại</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-item-b"><a href="/new.html">TIN TỨC
+                                    <i class="fa-solid fa-angle-down" style=" font-size: 13px;"></i>
+                                </a>
+                                <div class="header-item-project">
+                                    <ul>
+                                        <li><a href="">Nội thất cổ điển</a></li>
+                                        <li><a href="">Nội thất hiện đại</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="/contact.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile-menu d-md-none d-block">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        dự án
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">nội thất tân cổ điển</a></li>
+                        <li><a class="dropdown-item" href="#">nội thất hiện đại</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        tin tức
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">nhà đẹp</a></li>
+                        <li><a class="dropdown-item" href="#">kiến thức nội thức</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">liên hệ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-12">
+            <div class="bredcrumb">
+                <ul class="bredcrumb-list">
+                    <li class="bredcrumb-item">
+                        <a class="bredcrumb-item-link" href="index.html">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a id="active" href="">Dự án</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="product">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/59_thumb_350.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Công trình SIÊU KINH ĐIỂN năm 2022 nội thất Gia Khánh tại Hà Tĩnh</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>31/12/2022</span> <a href="">
+                                <p>NỘI THẤT HIỆN ĐẠI</p>
+                            </a>
+                        </div>
+                        <p>Một công trình SIÊU KINH ĐIỂN được Gia Khánh bàn giao tới gia chủ sở hữu căn biệt thự lớn
+                            nhất nhì ...</p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/1.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Công trình gỗ sồi kết hợp MDF tại Vinhomes ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>23/08/2022</span> <a href="">
+                                <p>NỘI THẤT HIỆN ĐẠI, TIN TỨC</p>
+                            </a>
+                        </div>
+                        <p>Nằm trong chuỗi công trình thiết kế nội thất của biệt thự Đảo Ecopark, Gia Khánh xin chân
+                            thành cảm ơn ...</p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/2.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Bàn giao căn biệt thự Đảo Ecopark &lpar; căn số 53 ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>30/08/2022</span> <a href="">
+                                <p>DỰ ÁN,NHÀ ĐẸP, TIN TỨC</p>
+                            </a>
+                        </div>
+                        <p>Một công trình được Gia Khánh hoàn thiện từ bàn tay và khối óc miệt mài của những người ...
+                        </p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/3.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Bàn giao công trình nội thất phong cách hiện ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>25/08/2022</span> <a href="">
+                                <p>TIN TỨC, NỘI THẤT HIỆN ĐẠI</p>
+                            </a>
+                        </div>
+                        <p>Lại một công trình nữa Gia Khánh thực hiện bàn giao tới khách hàng phong cách hiện đại gỗ ...
+                        </p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/4.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Bàn giao công trình Traditional gỗ óc chó chị ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>25/08/2022</span> <a href="">
+                                <p>TIN TỨC, NỘI THẤT HIỆN ĐẠI</p>
+                            </a>
+                        </div>
+                        <p>Khi vẻ đẹp của phong cách truyền thống được kết hợp với phong cách đương đại, tưởng chừng như
+                            không thể nhưng chúng ta ...</p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/5.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Thiết kế nội thất biệt thự đảo Ecopark phong ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>22/08/2022</span> <a href="">
+                                <p>TIN TỨC, NỘI THẤT HIỆN ĐẠI</p>
+                            </a>
+                        </div>
+                        <p>Một nhà biệt thự rộng lớn với đồ nội thất tân cổ điển gỗ Gõ chắc chắn sẽ tiêu tốn của gia chủ
+                            một khoản tài ...</p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/6.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Dự án Shop rượu Winecella Hoàn Kiếm - nội thất ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>20/08/2022</span> <a href="">
+                                <p>NỘI THẤT TÂN CỔ ĐIỂN, TIN TỨC</p>
+                            </a>
+                        </div>
+                        <p>Mới đây, Gia Khánh đã bàn giao công trình nội thất cho gia đình anh Bằng - Quảng Bình chất
+                            ...</p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/7.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Công trình thiết kế phong cách hiện đại Biệt ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>19/08/2022</span> <a href="">
+                                <p>TIN TỨC, NỘI THẤT HIỆN ĐẠI</p>
+                            </a>
+                        </div>
+                        <p>Nằm trong chuỗi công trình thiết kế nội thất của biệt thự Đảo Ecopark, Gia Khánh xin chân
+                            thành cảm ơn ...</p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/8.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Công trình nội thất gia đình gỗ sồi Mỹ - Dương Nội</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>18/08/2022</span> <a href="">
+                                <p>NỘI THẤT HIỆN ĐẠI, KIẾN THỨC NỘI THẤT</p>
+                            </a>
+                        </div>
+                        <p>Gia Khánh đang trong giai đoạn bàn giao công trình nội thất gỗ sồi kết hợp MDF cho gia đình
+                            anh Hào tại ...</p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img src="/img/phong cách nội thất hiện đại (4)_thumb_350.jpg" alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Công trình thiết kế nội thất hiện đại gỗ sồi ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>25/08/2022</span> <a href="">
+                                <p>NỘI THẤT HIỆN ĐẠI, TIN TỨC</p>
+                            </a>
+                        </div>
+                        <p>Một công trình được Gia Khánh hoàn thiện từ bàn tay và khối óc miệt mài của những người ...
+                        </p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img
+                            src="http://cdn0299.cdn4s.com/thumbs/noi%20th%E1%BA%A5t%20g%E1%BB%97%20%C4%91%E1%BB%8F%20ninh%20b%C3%ACnh%20(7)_thumb_350.jpg"
+                            alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Công trình thiết kế nội thất hiện đại gỗ sồi ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>25/08/2022</span> <a href="">
+                                <p>NỘI THẤT HIỆN ĐẠI, TIN TỨC</p>
+                            </a>
+                        </div>
+                        <p>Một công trình được Gia Khánh hoàn thiện từ bàn tay và khối óc miệt mài của những người ...
+                        </p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-sub">
+                    <a href=""><img
+                            src="http://cdn0299.cdn4s.com/thumbs/ecopark%20grand%20-%20gia%20kh%C3%A1nh-%20g%E1%BB%97%20%C3%B3c%20ch%C3%B3%20(6)_thumb_350.jpg"
+                            alt=""></a>
+                    <div class="product-content">
+                        <a href="">
+                            <h4>Công trình thiết kế nội thất hiện đại gỗ sồi ...</h4>
+                        </a>
+                        <div class="product-sub-day">
+                            <span>25/08/2022</span> <a href="">
+                                <p>NỘI THẤT HIỆN ĐẠI, TIN TỨC</p>
+                            </a>
+                        </div>
+                        <p>Một công trình được Gia Khánh hoàn thiện từ bàn tay và khối óc miệt mài của những người ...
+                        </p>
+                        <a href="" style="color:#C6A951; font-weight: bold; font-size: 14px;">XEM THÊM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-btn">
+            <button style="cursor: default;">1</button>
+            <a href="/list_project2.html"><button id="active-product-btn">2</button></a>
+
+        </div>
+        <div class="footer">
+            <div class="row footer-banner">
+                <div class="footer-banner-sub">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-content">
+                                <img src="/img/logo (1)_thumb_350.png" alt="">
+                                <p><i class="fa-solid fa-building" style="padding-right: 5px;"></i> Văn phòng Hà Nội: Số
+                                    27
+                                    Ngõ 629 Kim Mã, Ngọc Khánh, Ba
+                                    Đình, Hà Nội</p>
+                                <p><i class="fa-solid fa-building " style="padding-right: 5px;"></i> Xưởng sản xuất: Phú
+                                    Cát, Quốc Oai - Hà Nội</p>
+                                <p><i class="fa-solid fa-headphones" style="padding-right: 5px;"></i> Hotline: 090 322
+                                    1971
+                                    - 098 393 4190</p>
+                                <p><i class="fa-solid fa-envelope" style="padding-right: 5px;"></i> Email:
+                                    giakhanhdecor@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-content">
+                                <h5 style="font-weight: bold; padding-bottom: 15px;">Về Chúng Tôi</h5>
+                                <p> Giới thiệu</p>
+                                <p> Liên hệ</p>
+                                <p> Dự án nổi bật</p>
+                                <p> Email:
+                                    Quy trình tư vấn thiết kế</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-content">
+                                <h5 style="font-weight: bold; padding-bottom: 15px;">Dịch Vụ</h5>
+                                <p> Giới thiệu</p>
+                                <p> Liên hệ</p>
+                                <p> Dự án nổi bật</p>
+                                <p> Email:
+                                    Quy trình tư vấn thiết kế</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-content">
+                                <h5 style="font-weight: bold; padding-bottom: 15px;">Theo Dõi Chúng Tôi Tại:</h5>
+                                <p> <i class="fa-brands fa-facebook-f" style="padding:0 3px"></i> <i
+                                        class="fa-brands fa-twitter" style="padding:0 3px"></i> <i
+                                        class="fa-brands fa-google-plus-g" style="padding:0 3px"></i> <i
+                                        class="fa-brands fa-youtube" style="padding:0 3px"></i> <i
+                                        class="fa-brands fa-instagram" style="padding:0 3px"></i></p>
+                                <h5 style="font-weight: bold; padding: 20px 0;">Giờ Mở Cửa</h5>
+                                <p> Thứ 2 – Thứ 6: <br>
+                                    8:00 – 20:00 <br>
+
+                                    Thứ 7 – CN: <br>
+                                    8:00 – 11:30</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p>Copyright © 2021 Noithatgiakhanh.vn. All rights reserved.</p>
+                        <!-- <img src="/img/payment_logo.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+</html>
